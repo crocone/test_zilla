@@ -34,6 +34,7 @@ const computedPayments = computed(() => {
                 <th scope="col" class="border-0 text-uppercase font-medium pl-4">#</th>
                 <th scope="col" class="border-0 text-uppercase font-medium">Сумма</th>
                 <th scope="col" class="border-0 text-uppercase font-medium">Дата</th>
+                <th scope="col" class="border-0 text-uppercase font-medium">Статус</th>
               </tr>
               </thead>
               <tbody>
@@ -44,6 +45,9 @@ const computedPayments = computed(() => {
                 </td>
                 <td>
                   <h5>{{ payment.created_at }}</h5>
+                </td>
+                <td>
+                  <h5>{{ payment.status }}</h5>
                 </td>
               </tr>
               </tbody>
